@@ -1,37 +1,16 @@
-# TypeScript Example
+# Hydrogen with GSAP
 
-Hydrogen is a React framework and SDK that you can use to build fast and dynamic Shopify custom storefronts.
-
-[Check out the docs](https://shopify.dev/custom-storefronts/hydrogen)
-
-[Run this template in JavaScript on StackBlitz](https://stackblitz.com/github/Shopify/hydrogen/tree/dist/templates/hello-world-js?file=package.json)
-
-[Run this template in TypeScript on StackBlitz](https://stackblitz.com/github/Shopify/hydrogen/tree/dist/templates/hello-world-ts?file=package.json)
+Investigating the possibility of using [GSAP (Greensock Animation Program)](https://github.com/greensock/GSAP) with Hydrogen.
 
 ## Getting started
+
+1. Run `yarn && yarn dev` observe the animation working in dev.
+2. Run `yarn build && yarn preview` observe the error
+```
+Some functionality, such as asynchronous I/O (fetch, Cache API, KV), timeouts (setTimeout, setInterval), and generating random values (crypto.getRandomValues, crypto.subtle.generateKey), can only be performed while handling a request
+```
 
 **Requirements:**
 
 - Node.js version 16.14.0 or higher
 - Yarn
-
-```bash
-npm init @shopify/hydrogen@latest --template hello-world-ts
-```
-
-Remember to update `hydrogen.config.ts` with your shop's domain and Storefront API token!
-
-## Building for production
-
-```bash
-yarn build
-```
-
-## Previewing a production build
-
-To run a local preview of your Hydrogen app in an environment similar to Oxygen, build your Hydrogen app and then run `yarn preview`:
-
-```bash
-yarn build
-yarn preview
-```
